@@ -1,5 +1,5 @@
 import java.util.*;
-public class LibraryManagement {
+public class Main {
 
 	public static void nameOfBook(Book[] BookList){
 		BookList[1] = new Book("IT", "Stephen King");
