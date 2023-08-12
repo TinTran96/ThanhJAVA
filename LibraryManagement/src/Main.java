@@ -28,15 +28,17 @@ public class Main{
 		}
 	}
 	
-	public static void searchBookByAuthor(Scanner sc, Book[] BookList){
+	public static void searchBookByAuthor(Book[] BookList){
+		Scanner sa = new Scanner(System.in);
 		System.out.print("Nhập vào tên tác giả: ");
-		String au = sc.nextLine();
+		String au = sa.nextLine();
 		for(int i = 0; i < 4; i++){
 			if(au.equals(BookList[i].getAuthor())){
 				System.out.printf("Tên sách: %s\n", BookList[i].getName());
 				System.out.printf("====o%do====\n", i+1);
 			}
 		}
+		sa.close();
 	}
 	
 	public static void staffInfo(Staff[] StaffList){
@@ -86,7 +88,7 @@ public class Main{
 				memberInfo(MemberList);
 				break;
 			case 4:
-				searchBookByAuthor(sc, BookList);
+				searchBookByAuthor(BookList);
 				break;
 			default:
 				System.out.print("\nNhập lại lựa chọn");
