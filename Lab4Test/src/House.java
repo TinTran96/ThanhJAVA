@@ -6,7 +6,7 @@ public class House {
 	private double costPerSquareMeter;
 	private Boolean hasSwimmingPool;
 	
-	public House(String string, int i, double d, double e){
+	public House(){
 		houseCode = "A01";
 		numOfBedRooms = 2;
 		area = 0;
@@ -38,16 +38,6 @@ public class House {
 	}
 	public void setHasSwimmingPool(boolean hasSwimmingPool){
 		this.hasSwimmingPool = hasSwimmingPool;
-	}
-	public void hasSwimmingPool(){
-		if(this.hasSwimmingPool = false){
-			this.hasSwimmingPool = true;
-		}
-	}
-	public void noSwimmingPool(){
-		if(this.hasSwimmingPool = true){
-			this.hasSwimmingPool = false;
-		}
 	}
 	public double getArea(){
 		return area;
