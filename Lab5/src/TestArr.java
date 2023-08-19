@@ -5,6 +5,9 @@ public class TestArr {
 		int sum = 0;
 		int even = 0;
 		int odd = a[0];
+		if(odd % 2 == 0){
+			odd = 0;
+		}
 		int i = 0;
 		for(i = 0; i < a.length; i++){
 			if(a[i] % 2 == 0 && a[i] > even){
@@ -19,14 +22,17 @@ public class TestArr {
 	}
 	
 	public static int idxLastOdd(int[] a){
-		int odd = 0;
-		for(int i = a.length - 1; i < a.length; i--){
+		int result = 0;
+		for(int i = a.length - 1; i >= 0; i--){
 			if(a[i] % 2 != 0){
-				odd = a[i];
+				result = i;
 				break;
+			}else {
+				i = -1;
+				result = i;
 			}
 		}
-		return odd;
+		return result;
 	}
 	
 	public static int[] input(int n){
