@@ -1,0 +1,8 @@
+ The difference among BufferedWriter, FileWriter and FileOutPutStream??
+ FileWriter is used for writing streams of characters.
+ 
+ BufferedWriter is almost similar to FileWriter 
+ but it uses internal buffer to write data into File.
+ 
+ Additionally, FileOutPutStream is used for writing streams of raw bytes.
+ 
