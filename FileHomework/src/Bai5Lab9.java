@@ -13,7 +13,7 @@ public class Bai5Lab9 {
 				sum += sc.nextInt();
 			}
 			System.out.print(sum);
-			fw.write(sum);
+			fw.write(String.valueOf(sum));
 			fr.close();
 			fw.close();
 			sc.close();
